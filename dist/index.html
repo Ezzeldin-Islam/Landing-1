@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing-project</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script type="module" crossorigin src="/Landing-1/assets/index-FGRi03cx.js"></script>
+    <link rel="stylesheet" crossorigin href="/Landing-1/assets/index-Dcwt0qKz.css">
+  </head>
+  <body>
+    <header id="page-header"
+      class="header bg-[#cfcfcf] fixed w-full">
+      <div
+        class="container relative flex justify-between items-center w-full px-20 py-7 z-50">
+        <div id="logo"
+          class="flex justify-center items-center gap-3 cursor-pointer">
+          <img src="data:image/svg+xml,%3csvg%20width='36'%20height='36'%20viewBox='0%200%2036%2036'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_403_254)'%3e%3cpath%20d='M17.9986%205.53472L35.5997%200.349121L30.464%2018.0001L35.5997%2035.6012L17.9986%2030.4655L0.347656%2035.6012L5.53325%2018.0001L0.347656%200.349121L17.9986%205.53472Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_403_254'%3e%3crect%20width='36'%20height='36'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="logo" class="size-6">
+          <span id="desc" class="font-bold text-3xl">Positivus</span>
+        </div>
+        <div class="toggle-menu lg:hidden cursor-pointer text-3xl">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="nav-links"
+          class="nav justify-center items-center gap-3 transition-all duration-300">
+          <li><a href="#hero-section"
+              class=" li-nav">about
+              us</a></li>
+          <li><a href="#services"
+              class="li-nav">services</a></li>
+          <li><a href="#case-studies"
+              class="li-nav">use
+              cases</a></li>
+          <li><a href="#working-process"
+              class="li-nav">process</a></li>
+          <li><a href="#team"
+              class="li-nav">team</a></li>
+
+          <li id="quote"><a href="#"
+              class="inline-block p-4 border-solid border-olive-900 border rounded-xl text-gray-100 text-[18px] bg-green-600 duration-300 hover:bg-white hover:text-green-600 hover:translate-y-1">request
+              a
+              quote</a></li>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero-section" class="pt-40">
+      <div class="container ">
+        <div
+          class="flex justify-between items-center gap-10 mb-5 max-sm:flex-col max-md:flex-col">
+
+          <div id="hero-text"
+            class="basis-xl max-w-125 max-sm:text-center max-md:basis-0">
+            <h1 class="mb-8 text-5xl tracking-wider leading-14">Navigating the
+              digital
+              landscape for
+              success</h1>
+            <p class="leading-7 font-medium tracking-wider">Our digital
+              marketing
+              agency helps
+              businesses
+              grow and succeed
+              online
+              through a range of services including SEO, PPC, social media
+              marketing, and content creation.</p>
+            <button id="book-consultation"
+              class="black-btn ">Book
+              a
+              consultation</button>
+          </div>
+
+          <div id="hero-img" class="max-sm:max-w-100 max-md:max-w-100">
+            <img src="/Landing-1/assets/hero-DWYL3Alo.png" alt="hero-img"
+              class="max-w-125 basis-xs max-sm:max-w-87.5 max-md:max-w-87.5 max-lg:max-w-100">
+          </div>
+        </div>
+        <div id="companies"
+          class="flex justify-between items-center mt-10 max-md:flex-col max-md:gap-10 max-lg:flex-wrap max-lg:justify-start max-lg:gap-5">
+          <img src="data:image/png;base64,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" alt="company-1">
+          <img src="data:image/png;base64,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" alt="company-2">
+          <img src="data:image/png;base64,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" alt="company-3">
+          <img src="data:image/png;base64,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" alt="company-4">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAAwCAYAAADXcc6UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABUFJREFUeAHtm11S20gQgLtHLPGjDrAJoio4OE/kBuIE4QaBE8CeAHOChBuYG5ATrHOC9cPWmoWtYiD7vn5b4kTT6ZFsLEujH2x+RFV/L0I9o7FFT89097QBBEEQBEEQBEEQBEEQBEFoHni21qaskCKz3fn3n35WPgw2AyRzme+vuP/ZXP/hq3YPET7AAmxeneN9jGNBot6b64u96b3rfWui+XutT2+Ga280Aq2lO5Chvc7Xix7cgcL/KY7XO1rrWb/XIZL6PdeP4Khzfd51jX22tsH9McyINY+9rVwPkMIdEBpFR1tDpH5Wjkj7fwSBn5XbieJQujWEvp1QTsUrtjDXYMLTQkhHeSn6L8zKbk5q1IFrDKO+x2M4FW8Ha5nVAxAaRWL1oLNyhfg+fW+3D0B4n+1nt73p9rECBWDyYBfuF8170pc7PaGoTwbnRMgTk98i92KG4DP3HKVlpKo/z/VcFgIsbX8sCOEECQ7npRgOf30d3vplxnQB889Ord1SqHhma26we8DuL5spR6sOHR07S720LHGI8opHNT5IO0S1v5dRn7LOaVNpwfjTGFb32UOd24rRQzsZ+hNnMecMW2vfvJr9b1TZh6Cn9kFoFOtaj3gBPM63YPhnsLEVW7uDtLVbShXPC0soTl4TUT2X9BfCQ1foy9vUl+xKWKF4cfKaSEefaVdox8u/OwyPsJsVVSg+dvIWTp4ID4c7tHP0s9bu8F9Wajwb3LeTN8VuI62Jk3LDXvU73r/gCSAV7QxfbgSuNs+DQVtfDKBh2NCOM3N9V5JmDjQ9l7iO4m89RlgSQtzllOnuTDBra/HM5EsITwDHwfuu8McSGbCW1TjFWyahXVjSRU+iohyVS30CipPXQFrw/bQs/1C2HRQpPjfDxclrHsWhXUyhtVucijdkTrIzyR4GgNA8ItIusU2WlT224n4IRwY4jTnn0XOaNIpCe4KzBCUpW/cLPAa8Vx5BpLSrzfOiRu7vU1DhoUvO77TD2/NvRQ5zsXOn2Bsk9aHOh9T+kgukbB+FH6r/XFK2aTgS2eVL4G69zcF0Xa2Fzp0NFxyOQwBCY6gyxLLtudSrL3EchCem3NqnoP/Xy7Yzm1eqeHsSBEIjqbvtKuW2+lLFr8eOQbl3KDw+xdZODkc0OavPSisTOHVzwkL8v/KHQRDAA1Ng7ZoDrj1XQsdVQ1mZsm3BjwEf/I+yB/+LwCFGEM9WxMDeq0mVKqdyeWyy4/t2X0pXsz4nFKqPQKsfOS2dFuvkkoSrxuDx26/np7AgRdbOYfJJ++picPZq4wRsCnrue8U1lN10aFepeLvcuwZbDAxRzXLLNJcgXyo/0GSC5ILxFYFOYAkK93Y17tkLKTrlPExGV/nQrlau3g4GwpNTZO3pIsqyMuz0fS3FFw0mPC5F1p4tqyoqw047ebWOZSef+pk3khAeAF7yryZ/aj5mrDyTb8HN6AZb21l5nULL9K90lkEhHZhI3fo96JFPJvZT+H3IjyuB4wYM4gvL+D198qrfz0WZtaeLKC3JWX1bZ/unj9drK/4FfOuxk3dY28mblUXr+J4muXAPtAdqFIEZ3bACFym+SMLM5esDluGNPr+X7W86iRUYP55IaAIrv8HMIZlyV0JlrX1KVRm2+7dzBb8BGwYbu2RgC22NOStSeYYPc9RgUQUKd8eWT7Ph+Gw4PkXGL4oQLoPAH9PqZdZQDdHx2+uLA/x7rf0fN15xODDgJWqklNIE304XqU8XmoWdJLySbJnEWLd4FfDtDz3/x/E7EARBEARBEARBEATh2fATeZdPKoP41JEAAAAASUVORK5CYII=" alt="company-5">
+          <img src="data:image/png;base64,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" alt="company-6">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="mt-24 mb-10">
+      <div class="container">
+        <div
+          class="flex items-center gap-20 max-md:flex-col ">
+          <div id="lable"
+            class="lable">services</div>
+          <p class="basis-3xl leading-loose max-md:basis-2xs">At our digital
+            marketing agency, we
+            offer a
+            At our digital marketing agency, we offer a range of services to
+            help
+            businesses grow and succeed online. These services include:</p>
+        </div>
+        <div id="features"
+          class="mt-10 p-5 grid grid-cols-2 gap-10 max-lg:grid-cols-1 max-lg:p-1">
+          <div
+            class="feature bg-[#dddcdc]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold">Search
+                engine</p>
+              <p class="lable text-xl p-3 rounded-lg font-bold">optimization</p>
+              <div
+                class="learn-more ">
+                <i
+                  class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+                learn more
+              </div>
+            </div>
+            <div class="img">
+              <img src="/Landing-1/assets/feat-2-DypWwY9Y.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#B9FF66]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold bg-white">Search
+                engine</p>
+              <p
+                class="lable text-xl p-3 rounded-lg font-bold bg-white">optimization</p>
+              <div
+                class="learn-more">
+                <i
+                  class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+                learn more
+              </div>
+            </div>
+            <div class="img">
+              <img src="/Landing-1/assets/feat-3-jBmmNM2C.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#191A23]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold bg-white">Search
+                engine</p>
+              <p
+                class="lable text-xl p-3 rounded-lg font-bold bg-white">optimization</p>
+              <div
+                class="learn-more">
+                <i class="fa-solid fa-square-arrow-up-right text-3xl"
+                  style="color: rgb(99, 230, 190);"></i>
+                <span class="text-white">learn more</span>
+              </div>
+            </div>
+            <div class="img">
+              <img src="/Landing-1/assets/feat-4-CFsNTrnX.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#dddcdc]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold">Search
+                engine</p>
+              <p class="lable text-xl p-3 rounded-lg font-bold">optimization</p>
+              <div
+                class="learn-more">
+                <i
+                  class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+                learn more
+              </div>
+            </div>
+            <div class="img">
+              <img src="/Landing-1/assets/feat-5-CLp2t6P_.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#B9FF66]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold bg-white">Search
+                engine</p>
+              <p
+                class="lable text-xl p-3 rounded-lg font-bold bg-white">optimization</p>
+              <div
+                class="learn-more">
+                <i
+                  class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+                learn more
+              </div>
+            </div>
+            <div class="img">
+              <img src="/Landing-1/assets/feat-6-D3o_2lFm.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#191A23]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold bg-white">Search
+                engine</p>
+              <p
+                class="lable text-xl p-3 rounded-lg font-bold bg-white">optimization</p>
+              <div
+                class="learn-more">
+                <i class="fa-solid fa-square-arrow-up-right text-3xl"
+                  style="color: rgb(99, 230, 190);"></i>
+                <span class="text-white">learn more</span>
+              </div>
+            </div>
+            <div class="img">
+              <img src="/Landing-1/assets/feat-1-BgfegGnV.png" alt="feature">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proposal" class="my-20 mx-20 bg-[#e1e1e1] p-7 rounded-3xl">
+      <div class="container flex justify-evenly items-center max-md:flex-col ">
+        <div class="text">
+          <h1>Let’s make things happen</h1>
+          <p class="max-md:text-center">Contact us today to learn more about how
+            our digital marketing
+            services can help your business grow and succeed online.</p>
+          <button class="black-btn">Get your free proposal</button>
+        </div>
+        <div class="img max-md:w-50 max-md:ml-12 max-md:mt-10">
+          <img src="/Landing-1/assets/proposal-DXcNZJfO.png" alt="avatar">
+        </div>
+      </div>
+    </section>
+
+    <section id="case-studies" class="my-20">
+      <div class="container">
+        <div class="flex items-center gap-20 max-md:flex-col">
+          <div id="lable"
+            class="lable max-md:text-center">Case Studies</div>
+          <p class="basis-3xl leading-loose text-2xl max-md:basis-2xs">Explore
+            Real-Life Examples
+            of Our
+            Proven Digital Marketing Success through Our Case Studies</p>
+        </div>
+
+        <div id="case-studies"
+          class="case-studies">
+          <div class="case-study mr-1.5  ">
+            <p class="leading-[1.8] text-lg">For a local
+              restaurant,
+              we
+              implemented a
+              targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a 25%
+              increase in sales.</p>
+            <div class="learn-more justify-evenly mt-10 text-[#B9FF66]">
+              learn more
+              <i class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+            </div>
+          </div>
+          <div class="case-study mr-1.5  ">
+            <p class="leading-[1.8] text-lg">For a local
+              restaurant,
+              we
+              implemented a
+              targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a 25%
+              increase in sales.</p>
+            <div class="learn-more justify-evenly mt-10 text-[#B9FF66]">
+              learn more
+              <i class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+            </div>
+          </div>
+          <div class="case-study mr-1.5  ">
+            <p class="leading-[1.8] text-lg">For a local
+              restaurant,
+              we
+              implemented a
+              targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a 25%
+              increase in sales.</p>
+            <div class="learn-more justify-evenly mt-10 text-[#B9FF66]">
+              learn more
+              <i class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="working-process" class="my-20">
+      <div class="container">
+        <div class="flex items-center gap-20 max-sm:flex-col">
+          <div id="lable"
+            class="lable max-sm:text-center">Our Working Process </div>
+          <p class=" leading-loose text-2xl max-sm:text-center">Step-by-Step
+            Guide to Achieving
+            Your Business Goals</p>
+        </div>
+        <div id="work-plans" class="my-20">
+
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="my-20">
+      <div class="container">
+        <div class="flex items-center gap-20 my-20 max-md:flex-col">
+          <div id="lable"
+            class="lable">Team</div>
+          <p
+            class="basis-3xl leading-loose text-2xl max-md:basis-2 max-md:text-center">Meet
+            the
+            skilled and
+            experienced team behind our successful digital marketing
+            strategies</p>
+        </div>
+        <div id="team-members"
+          class="grid grid-cols-3 gap-10 max-lg:grid-cols-1">
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="/Landing-1/assets/team-1-biLmUdrh.png" alt="team-member"
+                class="max-w-20 ">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">John Smith</h3>
+                <p>CEO and Founder</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4 max-md:-top-6">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">10+ years of experience in digital marketing.
+              Expertise in SEO, PPC, and content strategy</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="/Landing-1/assets/team-2-CtHcNfo_.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Jane Doe</h3>
+                <p>Director of Operations</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">7+ years of experience in project management
+              and team leadership. Strong organizational and communication
+              skills</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="/Landing-1/assets/team-3-DbWtYdPJ.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Michael Brown</h3>
+                <p>Senior SEO Specialist</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">5+ years of experience in SEO and content
+              creation. Proficient in keyword research and on-page
+              optimization</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="/Landing-1/assets/team-4-DlEU6pX2.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Emily Johnson</h3>
+                <p>PPC Manager</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">3+ years of experience in paid search
+              advertising. Skilled in campaign management and performance
+              analysis</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="/Landing-1/assets/team-5-BEk_F5Ff.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Brian Williams</h3>
+                <p>Social Media Specialist</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">4+ years of experience in social media
+              marketing. Proficient in creating and scheduling content,
+              analyzing metrics, and building engagement</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="/Landing-1/assets/team-6-C9g-ou0b.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Sarah Kim</h3>
+                <p>Content Creator</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">2+ years of experience in writing and editing
+              Skilled in creating compelling, SEO-optimized content for various
+              industries</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="flex items-center gap-20 my-20 max-md:flex-col">
+          <div id="lable"
+            class="lable">Testimonials</div>
+          <p
+            class="basis-3xl leading-loose text-2xl max-md:basis-1 max-md:text-center">Hear
+            from
+            Our Satisfied
+            Clients: Read Our Testimonials to Learn More about Our Digital
+            Marketing Services</p>
+        </div>
+        <div
+          class="messages -z-1 overflow-hidden relative my-20 bg-[#191A23] rounded-3xl py-20 text-white">
+          <!-- <div
+            class="message  transition-all duration-500 max-w-[55%] ml-auto mr-auto">
+            <div
+              class="description leading-[1.8] text-lg p-10 border-[#B9FF66] border rounded-4xl">
+              <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+            </div>
+            <div class="person mt-10 ml-35">
+              <h2
+                class="font-medium tracking-[2px] text-lg text-[#b9ff66]">John
+                Smith</h2>
+              <p class="tracking-[2px]">Marketing Director at XYZ Corp</p>
+            </div>
+          </div> -->
+
+          <div
+            class="controls max-w-[55%] ml-auto mr-auto mt-10 flex justify-between items-center max-sm:max-w-[60%] max-sm:hidden">
+            <i class="fa-solid fa-arrow-left text-2xl cursor-pointer"></i>
+            <div class="bullets flex gap-7">
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+            </div>
+            <i class="fa-solid fa-arrow-right text-2xl cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="my-20">
+      <div class="container">
+        <div class="flex items-center gap-20 my-20 max-md:flex-col">
+          <div id="lable"
+            class="lable">Contact Us</div>
+          <p
+            class="basis-3xl leading-loose text-2xl max-md:basis-1 max-md:text-center">Connect
+            with Us: Let's
+            Discuss Your Digital Marketing Needs</p>
+        </div>
+
+        <div
+          class="contact-sec flex items-center justify-between gap-20 p-10 bg-[#e1e1e1] rounded-3xl overflow-hidden">
+          <form action
+            class="flex justify-start items-start flex-col flex-2 pl-14 max-md:flex-1 max-md:pl-6">
+            <label for="name" class="flex flex-col">
+              your name
+              <input type="text" placeholder="Your Name" id="name"
+                class="input">
+            </label>
+            <label for="email" class="flex flex-col">
+              your email
+              <input type="email" placeholder="Your Email" id="email"
+                class="input">
+            </label>
+            <span class>message</span>
+            <textarea name="message" id cols="30" rows="10"
+              placeholder="Your Message" class="input w-[140%]"></textarea>
+            <button
+              class="black-btn w-[75%]  flex justify-center max-md:p-3">Send
+              Message</button>
+          </form>
+          <div class="image flex-2 mr-[-30%] max-md:hidden">
+            <img src="/Landing-1/assets/contact-Dz6gkn_5.png" alt="normal image"
+              class="w-full h-full">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class>
+      <div class="container">
+        <div class="content bg-[#222] rounded-tr-3xl rounded-tl-3xl">
+          <header id="page-header"
+            class="flex justify-between items-center w-full px-20 py-7 max-lg:flex-col max-lg:p-10">
+            <div id="logo"
+              class="flex justify-center items-center gap-3 cursor-pointer text-white">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAVVJREFUeAHFl4FxgzAMRX8yASMwAhuEDcIIjJAN2hHSCdJukE4QM0GzAekEyQaqXOQ77IKDW6t5dwoXsP2QOECAiFqJEsqwo+Z4cn+s1HHieLYDkAFep5D1DxxXcXyMD07RywQ7sUiQfWclSUyxHw+eG0RBNXYc1YKsYtTjyTtKoxfRidLow/KU9D8cnHNtf1ar1YU3n9Cn88TCEfocHyHuuLK3H2LeaXhzgx5eYuvg4Dv0MIiIDXS4cEXPMbHWdTbhDk8sF98gP2+IiYUO+TljgXiD/FSIiWl4J9fIT4OYWElq2eKOuIEOJQUdTijWuL6OZlJMwwt6cafxC7aTYqaFLrYlKqbEmmV2NJ6Yhj6qhD4bT4z028g+Wl+Q/pTz7xpa1rQZmu8yG45XGprAe9Ru4lyjd5XFUvvqSk7QzKy7dwPbIKvcXxJhNfqxOCmrP5yIq0bxBV5LxBSxRmx0AAAAAElFTkSuQmCC" alt="logo" class="size-6">
+              <span id="desc" class="font-bold text-3xl">Positivus</span>
+            </div>
+            <nav id="nav-links"
+              class="nav flex justify-center items-center gap-3 text-white max-lg:flex-col max-lg:mt-5">
+              <li><a href="#hero-section"
+                  class=" li-nav">about
+                  us</a></li>
+              <li><a href="#services"
+                  class="li-nav">services</a></li>
+              <li><a href="#case-studies"
+                  class="li-nav">use
+                  cases</a></li>
+              <li><a href="#working-process"
+                  class="li-nav">process</a></li>
+              <li><a href="#team"
+                  class="li-nav">team</a></li>
+              <div
+                class="social flex justify-between items-center gap-5 ml-10 max-md:ml-0">
+                <a href="#"
+                  class="linkedin text-2xl transition-all duration-300 hover:scale-[1.2] hover:text-green-600"><i
+                    class="fa-brands fa-linkedin"></i></a>
+                <a href="#"
+                  class="facebook text-2xl transition-all duration-300 hover:scale-[1.2] hover:text-green-600"><i
+                    class="fa-brands fa-facebook"></i></a>
+                <a href="#"
+                  class="twitter text-2xl transition-all duration-300 hover:scale-[1.2] hover:text-green-600"><i
+                    class="fa-brands fa-twitter"></i></a>
+              </div>
+            </nav>
+          </header>
+          <div
+            class="text-white flex items-center pt-10 pb-5 pl-20 gap-20 max-md:pl-5 max-md:flex-col max-md:gap-5"><span>©
+              2026
+              Positivus.
+              All
+              Rights Reserved.</span> <a
+              class="underline cursor-pointer hover:text-green-600 duration-300">Privacy
+              Policy</a></div>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>
