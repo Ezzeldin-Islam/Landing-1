@@ -1,0 +1,998 @@
+================ index,html ================
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing-project</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="src/data.json">
+
+  </head>
+  <body>
+    <header id="page-header"
+      class="header bg-[#cfcfcf] fixed flex justify-between items-center w-full px-20 py-7 z-50">
+      <div id="logo"
+        class="flex justify-center items-center gap-3 cursor-pointer">
+        <img src="imgs/Icon.svg" alt="logo" class="size-6">
+        <span id="desc" class="font-bold text-3xl">Positivus</span>
+      </div>
+      <nav id="nav-links" class="nav flex justify-center items-center gap-3">
+        <li><a href="#hero-section"
+            class=" li-nav">about
+            us</a></li>
+        <li><a href="#services"
+            class="li-nav">services</a></li>
+        <li><a href="#case-studies"
+            class="li-nav">use
+            cases</a></li>
+        <li><a href="#working-process"
+            class="li-nav">process</a></li>
+        <li><a href="#team"
+            class="li-nav">team</a></li>
+
+        <li id="quote"><a href="#"
+            class="inline-block p-4 border-solid border-olive-900 border rounded-xl text-gray-100 text-[18px] bg-green-600 duration-300 hover:bg-white hover:text-green-600 hover:translate-y-1">request
+            a
+            quote</a></li>
+      </nav>
+    </header>
+
+    <section id="hero-section" class="pt-40">
+      <div class="container ">
+        <div
+          class="flex justify-between items-center gap-10 mb-5 max-sm:flex-col">
+
+          <div id="hero-text"
+            class="basis-xl max-w-125 max-sm:text-center">
+            <h1 class="mb-8 text-5xl tracking-wider leading-14">Navigating the
+              digital
+              landscape for
+              success</h1>
+            <p class="leading-7 font-medium tracking-wider">Our digital
+              marketing
+              agency helps
+              businesses
+              grow and succeed
+              online
+              through a range of services including SEO, PPC, social media
+              marketing, and content creation.</p>
+            <button id="book-consultation"
+              class="black-btn ">Book
+              a
+              consultation</button>
+          </div>
+
+          <div id="hero-img" class="max-sm:max-w-100">
+            <img src="imgs/hero.png" alt="hero-img"
+              class="max-w-125 basis-xs max-sm:max-w-87.5">
+          </div>
+        </div>
+        <div id="companies"
+          class="flex justify-between items-center mt-10 max-sm:flex-col max-sm:gap-10">
+          <img src="imgs/com-1.png" alt="company-1">
+          <img src="imgs/com-2.png" alt="company-2">
+          <img src="imgs/com-3.png" alt="company-3">
+          <img src="imgs/com-4.png" alt="company-4">
+          <img src="imgs/com-5.png" alt="company-5">
+          <img src="imgs/com-6.png" alt="company-6">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="mt-24 mb-10">
+      <div class="container">
+        <div
+          class="flex items-center gap-20 max-sm:flex-col ">
+          <div id="lable"
+            class="lable">services</div>
+          <p class="basis-3xl leading-loose max-sm:basis-2xs">At our digital
+            marketing agency, we
+            offer a
+            At our digital marketing agency, we offer a range of services to
+            help
+            businesses grow and succeed online. These services include:</p>
+        </div>
+        <div id="features"
+          class="mt-10 p-5 grid grid-cols-2 gap-10 max-sm:grid-cols-1 max-sm:p-1">
+          <div
+            class="feature bg-[#dddcdc]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold">Search
+                engine</p>
+              <p class="lable text-xl p-3 rounded-lg font-bold">optimization</p>
+              <div
+                class="learn-more ">
+                <i
+                  class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+                learn more
+              </div>
+            </div>
+            <div class="img">
+              <img src="imgs/feat-2.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#B9FF66]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold bg-white">Search
+                engine</p>
+              <p
+                class="lable text-xl p-3 rounded-lg font-bold bg-white">optimization</p>
+              <div
+                class="learn-more">
+                <i
+                  class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+                learn more
+              </div>
+            </div>
+            <div class="img">
+              <img src="imgs/feat-3.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#191A23]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold bg-white">Search
+                engine</p>
+              <p
+                class="lable text-xl p-3 rounded-lg font-bold bg-white">optimization</p>
+              <div
+                class="learn-more">
+                <i class="fa-solid fa-square-arrow-up-right text-3xl"
+                  style="color: rgb(99, 230, 190);"></i>
+                <span class="text-white">learn more</span>
+              </div>
+            </div>
+            <div class="img">
+              <img src="imgs/feat-4.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#dddcdc]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold">Search
+                engine</p>
+              <p class="lable text-xl p-3 rounded-lg font-bold">optimization</p>
+              <div
+                class="learn-more">
+                <i
+                  class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+                learn more
+              </div>
+            </div>
+            <div class="img">
+              <img src="imgs/feat-5.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#B9FF66]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold bg-white">Search
+                engine</p>
+              <p
+                class="lable text-xl p-3 rounded-lg font-bold bg-white">optimization</p>
+              <div
+                class="learn-more">
+                <i
+                  class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+                learn more
+              </div>
+            </div>
+            <div class="img">
+              <img src="imgs/feat-6.png" alt="feature">
+            </div>
+          </div>
+          <div
+            class="feature bg-[#191A23]">
+            <div class="text">
+              <p class="lable text-xl p-3 rounded-lg font-bold bg-white">Search
+                engine</p>
+              <p
+                class="lable text-xl p-3 rounded-lg font-bold bg-white">optimization</p>
+              <div
+                class="learn-more">
+                <i class="fa-solid fa-square-arrow-up-right text-3xl"
+                  style="color: rgb(99, 230, 190);"></i>
+                <span class="text-white">learn more</span>
+              </div>
+            </div>
+            <div class="img">
+              <img src="imgs/feat-1.png" alt="feature">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proposal" class="my-20 mx-20 bg-[#e1e1e1] p-7 rounded-3xl">
+      <div class="container flex justify-evenly items-center max-sm:flex-col ">
+        <div class="text">
+          <h1>Let’s make things happen</h1>
+          <p class="max-sm:text-center">Contact us today to learn more about how
+            our digital marketing
+            services can help your business grow and succeed online.</p>
+          <button class="black-btn">Get your free proposal</button>
+        </div>
+        <div class="img max-sm:w-50 max-sm:ml-12 max-sm:mt-10">
+          <img src="imgs/proposal.png" alt="avatar">
+        </div>
+      </div>
+    </section>
+
+    <section id="case-studies" class="my-20">
+      <div class="container">
+        <div class="flex items-center gap-20 max-sm:flex-col">
+          <div id="lable"
+            class="lable max-sm:text-center">Case Studies</div>
+          <p class="basis-3xl leading-loose text-2xl max-sm:basis-2xs">Explore
+            Real-Life Examples
+            of Our
+            Proven Digital Marketing Success through Our Case Studies</p>
+        </div>
+
+        <div id="case-studies"
+          class="case-studies">
+          <div class="case-study mr-1.5  ">
+            <p class="leading-[1.8] text-lg">For a local
+              restaurant,
+              we
+              implemented a
+              targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a 25%
+              increase in sales.</p>
+            <div class="learn-more justify-evenly mt-10 text-[#B9FF66]">
+              learn more
+              <i class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+            </div>
+          </div>
+          <div class="case-study mr-1.5  ">
+            <p class="leading-[1.8] text-lg">For a local
+              restaurant,
+              we
+              implemented a
+              targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a 25%
+              increase in sales.</p>
+            <div class="learn-more justify-evenly mt-10 text-[#B9FF66]">
+              learn more
+              <i class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+            </div>
+          </div>
+          <div class="case-study mr-1.5  ">
+            <p class="leading-[1.8] text-lg">For a local
+              restaurant,
+              we
+              implemented a
+              targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a 25%
+              increase in sales.</p>
+            <div class="learn-more justify-evenly mt-10 text-[#B9FF66]">
+              learn more
+              <i class="fa-solid fa-square-arrow-up-right text-3xl "></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="working-process" class="my-20">
+      <div class="container">
+        <div class="flex items-center gap-20 max-sm:flex-col">
+          <div id="lable"
+            class="lable max-sm:text-center">Our Working Process </div>
+          <p class=" leading-loose text-2xl max-sm:text-center">Step-by-Step
+            Guide to Achieving
+            Your Business Goals</p>
+        </div>
+        <div id="work-plans" class="my-20">
+
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="my-20">
+      <div class="container">
+        <div class="flex items-center gap-20 my-20 max-sm:flex-col">
+          <div id="lable"
+            class="lable">Team</div>
+          <p
+            class="basis-3xl leading-loose text-2xl max-sm:basis-2 max-sm:text-center">Meet
+            the
+            skilled and
+            experienced team behind our successful digital marketing
+            strategies</p>
+        </div>
+        <div id="team-members"
+          class="grid grid-cols-3 gap-10 max-sm:grid-cols-1">
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="imgs/team-1.png" alt="team-member"
+                class="max-w-20 ">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">John Smith</h3>
+                <p>CEO and Founder</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4 max-sm:-top-6">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">10+ years of experience in digital marketing.
+              Expertise in SEO, PPC, and content strategy</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="imgs/team-2.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Jane Doe</h3>
+                <p>Director of Operations</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">7+ years of experience in project management
+              and team leadership. Strong organizational and communication
+              skills</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="imgs/team-3.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Michael Brown</h3>
+                <p>Senior SEO Specialist</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">5+ years of experience in SEO and content
+              creation. Proficient in keyword research and on-page
+              optimization</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="imgs/team-4.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Emily Johnson</h3>
+                <p>PPC Manager</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">3+ years of experience in paid search
+              advertising. Skilled in campaign management and performance
+              analysis</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="imgs/team-5.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Brian Williams</h3>
+                <p>Social Media Specialist</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">4+ years of experience in social media
+              marketing. Proficient in creating and scheduling content,
+              analyzing metrics, and building engagement</p>
+          </div>
+          <div
+            class="member">
+            <div
+              class="row">
+              <img src="imgs/team-6.png" alt="team-member"
+                class="max-w-20">
+              <div class="stats">
+                <h3 class="font-medium text-2xl">Sarah Kim</h3>
+                <p>Content Creator</p>
+
+              </div>
+              <div class="absolute -right-2.5 -top-4">
+                <i
+                  class="fa-brands fa-linkedin text-2xl"
+                  style="border-radius: 50%; background-color: greenyellow;"></i>
+              </div>
+
+            </div>
+            <p class="decription">2+ years of experience in writing and editing
+              Skilled in creating compelling, SEO-optimized content for various
+              industries</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="flex items-center gap-20 my-20">
+          <div id="lable"
+            class="lable">Testimonials</div>
+          <p class="basis-3xl leading-loose text-2xl">Hear from Our Satisfied
+            Clients: Read Our Testimonials to Learn More about Our Digital
+            Marketing Services</p>
+        </div>
+        <div
+          class="messages  overflow-hidden relative my-20 bg-[#191A23] rounded-3xl py-20 text-white">
+          <!-- <div
+            class="message  transition-all duration-500 max-w-[55%] ml-auto mr-auto">
+            <div
+              class="description leading-[1.8] text-lg p-10 border-[#B9FF66] border rounded-4xl">
+              <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+            </div>
+            <div class="person mt-10 ml-35">
+              <h2
+                class="font-medium tracking-[2px] text-lg text-[#b9ff66]">John
+                Smith</h2>
+              <p class="tracking-[2px]">Marketing Director at XYZ Corp</p>
+            </div>
+          </div> -->
+
+          <div
+            class="controls max-w-[55%] ml-auto mr-auto mt-10 flex justify-between items-center">
+            <i class="fa-solid fa-arrow-left text-2xl cursor-pointer"></i>
+            <div class="bullets flex gap-7">
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+              <span class="w-4 h-4 rounded-full bg-white cursor-pointer"></span>
+            </div>
+            <i class="fa-solid fa-arrow-right text-2xl cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="my-20">
+      <div class="container">
+        <div class="flex items-center gap-20 my-20">
+          <div id="lable"
+            class="lable">Contact Us</div>
+          <p class="basis-3xl leading-loose text-2xl">Connect with Us: Let's
+            Discuss Your Digital Marketing Needs</p>
+        </div>
+
+        <div
+          class="contact-sec flex items-center justify-between gap-20 p-10 bg-[#e1e1e1] rounded-3xl overflow-hidden">
+          <form action
+            class="flex justify-start items-start flex-col flex-2 pl-14">
+            <label for="name" class="flex flex-col">
+              your name
+              <input type="text" placeholder="Your Name" id="name"
+                class="input">
+            </label>
+            <label for="email" class="flex flex-col">
+              your email
+              <input type="email" placeholder="Your Email" id="email"
+                class="input">
+            </label>
+            <span>message</span>
+            <textarea name="message" id cols="30" rows="10"
+              placeholder="Your Message" class="input "></textarea>
+            <button
+              class="black-btn w-[75%]  flex justify-center">Send
+              Message</button>
+          </form>
+          <div class="image flex-2 mr-[-30%]">
+            <img src="imgs/contact.png" alt="normal image"
+              class="w-full h-full">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class>
+      <div class="container">
+        <div class="content bg-[#222] rounded-tr-3xl rounded-tl-3xl">
+          <header id="page-header"
+            class="flex justify-between items-center w-full px-20 py-7">
+            <div id="logo"
+              class="flex justify-center items-center gap-3 cursor-pointer text-white">
+              <img src="imgs/Icon-white.png" alt="logo" class="size-6">
+              <span id="desc" class="font-bold text-3xl">Positivus</span>
+            </div>
+            <nav id="nav-links"
+              class="nav flex justify-center items-center gap-3 text-white">
+              <li><a href="#hero-section"
+                  class=" li-nav">about
+                  us</a></li>
+              <li><a href="#services"
+                  class="li-nav">services</a></li>
+              <li><a href="#case-studies"
+                  class="li-nav">use
+                  cases</a></li>
+              <li><a href="#working-process"
+                  class="li-nav">process</a></li>
+              <li><a href="#team"
+                  class="li-nav">team</a></li>
+              <div
+                class="social flex justify-between items-center gap-5 ml-10">
+                <a href="#"
+                  class="linkedin text-2xl transition-all duration-300 hover:scale-[1.2] hover:text-green-600"><i
+                    class="fa-brands fa-linkedin"></i></a>
+                <a href="#"
+                  class="facebook text-2xl transition-all duration-300 hover:scale-[1.2] hover:text-green-600"><i
+                    class="fa-brands fa-facebook"></i></a>
+                <a href="#"
+                  class="twitter text-2xl transition-all duration-300 hover:scale-[1.2] hover:text-green-600"><i
+                    class="fa-brands fa-twitter"></i></a>
+              </div>
+            </nav>
+          </header>
+          <div
+            class="text-white flex items-center pt-10 pb-5 pl-20 gap-20"><span>©
+              2026
+              Positivus.
+              All
+              Rights Reserved.</span> <a
+              class="underline cursor-pointer hover:text-green-600 duration-300">Privacy
+              Policy</a></div>
+        </div>
+
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
+<!-- 
+  <div
+            class="plan active">
+            <div
+              class="row">
+              <div class="stats flex items-center gap-5">
+                <span class="number text-[60px]">01</span>
+                <span class="step text-[30px]">Consultation</span>
+              </div>
+              <span class="icon text-[40px] cursor-pointer"><i
+                  class="fa-solid fa-circle-minus border-black border"
+                  style="background-color: black; color: white; border-radius: 50%;"></i></span>
+            </div>
+            <p>During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.</p>
+          </div>
+-->
+
+=================== style.css ====================
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --font-grotesk: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-grotesk);
+    text-transform: capitalize;
+    box-sizing: border-box;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+  }
+  .headroom--pinned {
+    transform: translateY(0%);
+  }
+  .headroom--unpinned {
+    transform: translateY(-100%);
+  }
+  .lable {
+    @apply p-4 bg-[#B9FF66] text-black rounded-xl text-3xl font-bold;
+  }
+
+  .li-nav {
+    @apply inline-block p-2.5 rounded-xl duration-300 hover:backdrop-blur-lg hover:scale-[1.1] hover:text-green-600 text-[19px];
+  }
+
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  nav li a.active {
+    background-color: var(--color-gray-300);
+  }
+
+  #features .feature {
+    @apply flex justify-between items-center p-10 rounded-xl shadow-[-13px_11px_16px_-4px] hover:scale-[0.9] duration-300 max-sm:flex-col-reverse max-sm:text-center;
+
+    .lable {
+      @apply max-sm:text-center max-sm:mt-7;
+    }
+  }
+
+  .learn-more {
+    @apply mt-24 flex justify-between items-center text-lg cursor-pointer;
+  }
+
+  .black-btn {
+    @apply inline-flex cursor-pointer mt-7 font-medium text-lg p-5 bg-[#222] text-white rounded-xl tracking-wider duration-300 hover:scale-105;
+  }
+  .case-studies {
+    @apply grid grid-cols-3 p-15 my-20 rounded-3xl bg-[#191A23] text-white gap-8 nth-of-type-[1]:border-r-2 nth-of-type-[1]:border-r-white max-sm:grid-cols-1 max-sm:text-center max-sm:px-3 max-sm:nth-of-type-[1]:border-b-2 max-sm:nth-of-type-[1]:border-b-white;
+    & .case-study:not(:last-child) {
+      margin-right: 5px;
+      border-right: 1px solid white;
+      @apply max-sm:mr-0 max-sm:border-b-2 max-sm:border-b-white max-sm:border-r-0 max-sm:pb-9;
+    }
+  }
+
+  #case-studies .case-study {
+    @apply duration-300 hover:border-green-600 hover:scale-[.9];
+  }
+  #work-plans .plan {
+    @apply w-full mx-5 p-10 rounded-3xl shadow-[-3px_6px_0_0] mb-10 bg-[#e1e1e1] transition-all duration-300 cursor-pointer hover:translate-y-2.5 max-sm:px-7;
+
+    .row {
+      @apply flex justify-between items-center max-sm:flex-col-reverse max-sm:text-center;
+      border: none;
+
+      .stats {
+        @apply max-sm:flex-col;
+      }
+    }
+
+    p {
+      display: none;
+      @apply max-sm:text-[22px];
+    }
+
+    &.active {
+      @apply bg-[#B9FF66];
+
+      .row {
+        @apply flex justify-between items-center mb-5 pb-5 border-b border-b-black;
+      }
+      p {
+        display: block;
+      }
+    }
+  }
+
+  #team-members .member {
+    @apply border border-black rounded-4xl p-10 shadow-[0px_6px_0_0] hover:scale-[1.1] duration-300;
+
+    i {
+      cursor: pointer;
+    }
+
+    .row {
+      @apply relative flex items-center  gap-4 mb-5 pb-5 border-b border-b-black max-sm:flex-col max-sm:text-center;
+
+      .stats {
+        @apply flex flex-col gap-3;
+      }
+
+      img {
+        @apply max-sm:w-15;
+      }
+    }
+  }
+  #testimonials .description {
+    position: relative;
+    background: transparent;
+    border: 2px solid #b9ff66;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+  }
+  #testimonials .description::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 20%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #b9ff66;
+  }
+  #testimonials .description::before {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: calc(20% + 2px);
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 28px solid #191a23;
+    z-index: 1;
+  }
+  #testimonials .message {
+    position: absolute;
+    left: -100%;
+
+    &.active {
+      position: relative;
+      left: 0;
+    }
+  }
+  #contact .input {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 200%;
+    transition: 0.3s;
+
+    &::placeholder {
+      transition: 0.3s;
+    }
+
+    &:focus {
+      border: 1px solid transparent;
+      outline: none;
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+  }
+  #contact textarea.input {
+    max-width: 75%;
+  }
+}
+
+================== main.js ==========================
+import "./style.css";
+import Headroom from "headroom.js";
+
+const header = document.querySelector("header.header");
+
+const headroom = new Headroom(header);
+headroom.init();
+
+let numOfPlans = 6;
+let currentPlan = 1;
+let plansContainer = document.getElementById("work-plans");
+
+let plansContent = {
+  1: {
+    number: "01",
+    title: "Consultation",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  2: {
+    number: "02",
+    title: "Research and Strategy Development",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  3: {
+    number: "03",
+    title: "Implementation",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  4: {
+    number: "04",
+    title: "Monitoring and Optimization",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  5: {
+    number: "05",
+    title: "Reporting and Communication",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  6: {
+    number: "06",
+    title: "Continual Improvement",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+};
+
+for (let i = 1; i <= numOfPlans; i++) {
+  let plan = document.createElement("div");
+  plan.classList.add("plan");
+  i === 1 ? plan.classList.add("active") : null;
+
+  let content = `
+  <div
+    class="row">
+    <div class="stats flex items-center gap-5">
+      <span class="number text-[60px]">${plansContent[i].number}</span>
+      <span class="step text-[30px]">${plansContent[i].title}</span>
+    </div>
+    <span class="icon text-[40px] cursor-pointer"><i
+        class="fa-solid fa-circle-${i === 1 ? "minus" : "plus"} border-black border"
+        style="background-color: black; color: white; border-radius: 50%;"></i></span>
+  </div>
+  <p>${plansContent[i].description}</p>
+  `;
+  plan.innerHTML = content;
+  plansContainer.append(plan);
+}
+
+let plans = document.querySelectorAll("#work-plans .plan");
+
+if (plans) {
+  plans.forEach((plan) => {
+    plan.addEventListener("click", () => {
+      if (plan.classList.contains("active")) {
+        plan.classList.remove("active");
+        plan
+          .querySelector("i")
+          .classList.replace("fa-circle-minus", "fa-circle-plus");
+      } else {
+        plans.forEach((plan) => {
+          plan.classList.remove("active");
+          plan
+            .querySelector("i")
+            .classList.replace("fa-circle-minus", "fa-circle-plus");
+        });
+        plan
+          .querySelector("i")
+          .classList.replace("fa-circle-plus", "fa-circle-minus");
+        plan.classList.add("active");
+      }
+    });
+  });
+}
+
+let messageContainer = document.querySelector("#testimonials .messages");
+
+async function fetchData() {
+  try {
+    let res = await fetch("src/data.json");
+    let allData = await res.json();
+    let testimonials = allData[0];
+    console.log(testimonials);
+
+    let wrapper = document.createElement("div");
+    wrapper.className = "wrapper flex items-center";
+    messageContainer.prepend(wrapper);
+
+    Object.values(testimonials).forEach((review) => {
+      let message = document.createElement("div");
+      message.className =
+        "message transition-all duration-500 max-w-[55%] ml-auto mr-auto";
+      message.dataset.id = review.id;
+
+      let content = `
+          <div
+      class="description leading-[1.8] text-lg p-10 border-[#B9FF66] border rounded-4xl">
+      <p>"${review.description}"</p>
+    </div>
+    <div class="person mt-10 ml-35">
+      <h2
+        class="font-medium tracking-[2px] text-lg text-[#b9ff66]">${review.personName}</h2>
+      <p class="tracking-[2px]">${review.job}</p>
+    </div>
+        `;
+
+      if (review.id == 1) {
+        message.classList.add("active");
+      }
+
+      message.innerHTML = content;
+
+      wrapper.append(message);
+    });
+
+    let messages = document.querySelectorAll("#testimonials .message");
+    let controls = document.querySelector("#testimonials .controls");
+    let arrowLeft = document.querySelector(
+      "#testimonials .controls .fa-arrow-left",
+    );
+    let arrowRight = document.querySelector(
+      "#testimonials .controls .fa-arrow-right",
+    );
+
+    // console.log(currentMessage);
+    if (messages) {
+      arrowRight.addEventListener("click", () => {
+        getNextMessage(messages);
+      });
+      arrowLeft.addEventListener("click", () => {
+        getPreviousMessage(messages);
+      });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+fetchData();
+
+function getNextMessage(messages) {
+  let currentMessage = document.querySelector("#testimonials .message.active")
+    .dataset.id;
+  messages.forEach((message) => {
+    message.classList.remove("active");
+  });
+  let nextMessage = document.querySelector(
+    `#testimonials .message[data-id="${+currentMessage + 1}"]`,
+  );
+  nextMessage.classList.add("active");
+}
+
+function getPreviousMessage(messages) {
+  let currentMessage = document.querySelector("#testimonials .message.active")
+    .dataset.id;
+  messages.forEach((message) => {
+    message.classList.remove("active");
+  });
+  let previousMessage = document.querySelector(
+    `#testimonials .message[data-id="${+currentMessage - 1}"]`,
+  );
+  previousMessage.classList.add("active");
+}
+
+/*
+ *<div
+ *  class="message  transition-all duration-500 max-w-[55%] ml-auto mr-auto">
+ *  <div
+ *    class="description leading-[1.8] text-lg p-10 border-[#B9FF66] border rounded-4xl">
+ *    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+ *  </div>
+ *  <div class="person mt-10 ml-35">
+ *    <h2
+ *      class="font-medium tracking-[2px] text-lg text-[#b9ff66]">John
+ *      Smith</h2>
+ *    <p class="tracking-[2px]">Marketing Director at XYZ Corp</p>
+ *  </div>
+ * </div>
+ */

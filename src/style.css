@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --font-grotesk: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-grotesk);
+    text-transform: capitalize;
+    box-sizing: border-box;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+  }
+  .headroom--pinned {
+    transform: translateY(0%);
+  }
+  .headroom--unpinned {
+    transform: translateY(-100%);
+  }
+  .lable {
+    @apply p-4 bg-[#B9FF66] text-black rounded-xl text-3xl font-bold;
+  }
+
+  .li-nav {
+    @apply inline-block p-2.5 rounded-xl duration-300 hover:backdrop-blur-lg hover:scale-[1.1] hover:text-green-600 text-[19px];
+  }
+  .header {
+    #nav-links {
+      @apply max-lg:absolute  max-lg:top-[70%] max-lg:right-0 max-lg:flex-col max-lg:bg-[#EAEAE9] max-lg:h-fit max-lg:mt-10 max-lg:p-10 max-lg:rounded-3xl max-lg:z-100 max-lg:before:absolute max-lg:before:bottom-full max-lg:before:right-17 max-lg:before:content-[''] max-lg:before:border-26 max-lg:before:border-b-[#EAEAE9] max-lg:before:border-r-transparent max-lg:before:border-l-transparent max-lg:before:border-t-transparent;
+    }
+    #nav-links {
+      @apply max-lg:hidden lg:flex;
+    }
+    .toggle-menu.active ~ #nav-links {
+      @apply flex opacity-[1];
+    }
+  }
+
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  nav li a.active {
+    background-color: var(--color-gray-300);
+  }
+
+  #features .feature {
+    @apply flex justify-between items-center p-10 rounded-xl shadow-[-13px_11px_16px_-4px] hover:scale-[0.9] duration-300 max-sm:flex-col-reverse max-sm:text-center;
+
+    .lable {
+      @apply max-sm:text-center max-sm:mt-7;
+    }
+  }
+
+  .learn-more {
+    @apply mt-24 flex justify-between items-center text-lg cursor-pointer;
+  }
+
+  .black-btn {
+    @apply inline-flex cursor-pointer mt-7 font-medium text-lg p-5 bg-[#222] text-white rounded-xl tracking-wider duration-300 hover:scale-105;
+  }
+  .case-studies {
+    @apply grid grid-cols-3 p-15 my-20 rounded-3xl bg-[#191A23] text-white gap-8 nth-of-type-[1]:border-r-2 nth-of-type-[1]:border-r-white max-md:grid-cols-1 max-md:text-center max-md:px-3 max-md:nth-of-type-[1]:border-b-2 max-md:nth-of-type-[1]:border-b-white;
+    & .case-study:not(:last-child) {
+      margin-right: 5px;
+      border-right: 1px solid white;
+      @apply max-md:mr-0 max-md:border-b-2 max-md:border-b-white max-md:border-r-0 max-md:pb-9;
+    }
+  }
+
+  #case-studies .case-study {
+    @apply duration-300 hover:border-green-600 hover:scale-[.9];
+  }
+  #work-plans .plan {
+    @apply w-full mx-5 p-10 rounded-3xl shadow-[-3px_6px_0_0] mb-10 bg-[#e1e1e1] transition-all duration-300 cursor-pointer hover:translate-y-2.5 max-sm:px-7;
+
+    .row {
+      @apply flex justify-between items-center max-sm:flex-col-reverse max-sm:text-center;
+      border: none;
+
+      .stats {
+        @apply max-sm:flex-col;
+      }
+    }
+
+    p {
+      display: none;
+      @apply max-sm:text-[22px];
+    }
+
+    &.active {
+      @apply bg-[#B9FF66];
+
+      .row {
+        @apply flex justify-between items-center mb-5 pb-5 border-b border-b-black;
+      }
+      p {
+        display: block;
+      }
+    }
+  }
+
+  #team-members .member {
+    @apply border border-black rounded-4xl p-10 shadow-[0px_6px_0_0]  duration-300 -z-10;
+
+    i {
+      cursor: pointer;
+    }
+
+    .row {
+      @apply relative flex items-center  gap-4 mb-5 pb-5 border-b border-b-black max-md:flex-col max-md:text-center;
+
+      .stats {
+        @apply flex flex-col gap-3;
+      }
+
+      img {
+        @apply max-md:w-15;
+      }
+    }
+  }
+  #testimonials .description {
+    position: relative;
+    background: transparent;
+    border: 2px solid #b9ff66;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    @apply max-sm:p-5;
+  }
+  #testimonials .description::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 20%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #b9ff66;
+  }
+  #testimonials .description::before {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: calc(20% + 2px);
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 28px solid #191a23;
+    z-index: 1;
+  }
+
+  #testimonials .message {
+    position: absolute;
+    left: -100%;
+
+    &.active {
+      position: relative;
+      left: 0;
+    }
+  }
+  #contact .input {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 200%;
+    transition: 0.3s;
+
+    @apply max-md:w-full;
+
+    &::placeholder {
+      transition: 0.3s;
+    }
+
+    &:focus {
+      border: 1px solid transparent;
+      outline: none;
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+  }
+  #contact textarea.input {
+    max-width: 75%;
+  }
+}
